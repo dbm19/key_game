@@ -29,9 +29,13 @@ func set_positions():
 	key_tooth_2_scene_instance = key_tooth_2_scene.instantiate()
 	key_tooth_3_scene_instance = key_tooth_3_scene.instantiate()
 	
-	key_tooth_1_scene_instance.position.y += Global.pin_line_position_1 * 100
-	key_tooth_2_scene_instance.position.y += Global.pin_line_position_2 * 100
-	key_tooth_3_scene_instance.position.y += Global.pin_line_position_3 * 100
+	#key_tooth_1_scene_instance.position.y += Global.pin_line_position_1 * 100
+	#key_tooth_2_scene_instance.position.y += Global.pin_line_position_2 * 100
+	#key_tooth_3_scene_instance.position.y += Global.pin_line_position_3 * 100
+	
+	key_tooth_1_scene_instance.position.y += Global.pin_line_position_1 * -100
+	key_tooth_2_scene_instance.position.y += Global.pin_line_position_2 * -100
+	key_tooth_3_scene_instance.position.y += Global.pin_line_position_3 * -100
 	
 	key_tooth_1_scene_instance.position.x = key_tooth_1_marker.position.x
 	key_tooth_2_scene_instance.position.x = key_tooth_2_marker.position.x

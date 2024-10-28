@@ -3,13 +3,14 @@
 [ext_resource type="Script" path="res://key_tooth.gd" id="1_jnqq4"]
 
 [sub_resource type="Gradient" id="Gradient_16o5n"]
-colors = PackedColorArray(0.223529, 0.835294, 0.941176, 1, 0.223529, 0.835294, 0.941176, 1)
+offsets = PackedFloat32Array(0.005, 1)
+colors = PackedColorArray(0.0722551, 0.516697, 0.588227, 1, 0.0705882, 0.517647, 0.588235, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_d5jwc"]
 gradient = SubResource("Gradient_16o5n")
 
 [node name="KeyTooth" type="Node2D"]
-position = Vector2(355, 182)
+position = Vector2(0, 29)
 script = ExtResource("1_jnqq4")
 
 [node name="KeyToothSprite" type="Sprite2D" parent="."]
