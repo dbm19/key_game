@@ -6,7 +6,7 @@
 [node name="GameplayScreen" type="Node2D"]
 
 [node name="Key" parent="." instance=ExtResource("1_0fxmo")]
-position = Vector2(237, 310)
+position = Vector2(233, 318)
 
 [node name="Lock" parent="." instance=ExtResource("2_hos64")]
-position = Vector2(848, 313)
+position = Vector2(1090, 329)

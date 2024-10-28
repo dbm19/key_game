@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://pin.gd" id="1_qy1df"]
 
-[sub_resource type="Gradient" id="Gradient_16o5n"]
+[sub_resource type="Gradient" id="Gradient_3xgwx"]
 colors = PackedColorArray(0.772549, 0.403922, 0.964706, 1, 0.773189, 0.400273, 0.964228, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_xnefx"]
-gradient = SubResource("Gradient_16o5n")
+gradient = SubResource("Gradient_3xgwx")
 
 [node name="Pin" type="Node2D"]
 position = Vector2(598, 294)

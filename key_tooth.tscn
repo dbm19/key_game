@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ct6rlr7uaerf4"]
+
+[ext_resource type="Script" path="res://key_tooth.gd" id="1_jnqq4"]
+
+[sub_resource type="Gradient" id="Gradient_16o5n"]
+colors = PackedColorArray(0.223529, 0.835294, 0.941176, 1, 0.223529, 0.835294, 0.941176, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_d5jwc"]
+gradient = SubResource("Gradient_16o5n")
+
+[node name="KeyTooth" type="Node2D"]
+position = Vector2(355, 182)
+script = ExtResource("1_jnqq4")
+
+[node name="KeyToothSprite" type="Sprite2D" parent="."]
+position = Vector2(2.47955e-05, 9.53674e-06)
+scale = Vector2(0.265625, 89.0625)
+texture = SubResource("GradientTexture1D_d5jwc")

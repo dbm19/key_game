@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://btgemdp6rg2s4"]
+[gd_scene load_steps=5 format=3 uid="uid://btgemdp6rg2s4"]
+
+[ext_resource type="Script" path="res://key.gd" id="1_gfljg"]
 
 [sub_resource type="Gradient" id="Gradient_g4fsx"]
 colors = PackedColorArray(0.223529, 0.835294, 0.941176, 1, 0.223654, 0.833943, 0.941794, 1)
@@ -7,17 +9,27 @@ colors = PackedColorArray(0.223529, 0.835294, 0.941176, 1, 0.223654, 0.833943, 0
 gradient = SubResource("Gradient_g4fsx")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bqjkb"]
-size = Vector2(122, 12)
+size = Vector2(462, 30)
 
 [node name="Key" type="Node2D"]
 position = Vector2(551, 318)
+script = ExtResource("1_gfljg")
 
 [node name="KeyBladeArea" type="Area2D" parent="."]
 
 [node name="KeyBladeSprite" type="Sprite2D" parent="KeyBladeArea"]
-position = Vector2(1.90735e-06, -5.24521e-06)
-scale = Vector2(0.474609, 12)
+position = Vector2(0, -2.86102e-06)
+scale = Vector2(1.80811, 30.9877)
 texture = SubResource("GradientTexture1D_ahbpb")
 
 [node name="KeyBladeCollisionShape" type="CollisionShape2D" parent="KeyBladeArea"]
 shape = SubResource("RectangleShape2D_bqjkb")
+
+[node name="KeyTooth1Marker" type="Marker2D" parent="."]
+position = Vector2(-196, -59)
+
+[node name="KeyTooth2Marker" type="Marker2D" parent="."]
+position = Vector2(-124, -59)
+
+[node name="KeyTooth3Marker" type="Marker2D" parent="."]
+position = Vector2(-52, -58)
