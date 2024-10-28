@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://u3py4itkwc8p"]
+
+[ext_resource type="Script" path="res://lock.gd" id="1_ti0pk"]
+[ext_resource type="PackedScene" uid="uid://cqmian0grcrss" path="res://pin.tscn" id="2_citan"]
+
+[sub_resource type="Gradient" id="Gradient_ndfra"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_otk1r"]
+gradient = SubResource("Gradient_ndfra")
+
+[sub_resource type="Gradient" id="Gradient_taaq8"]
+colors = PackedColorArray(0.356863, 0.784314, 0.768627, 1, 0.358723, 0.783908, 0.768001, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_h3rru"]
+gradient = SubResource("Gradient_taaq8")
+
+[node name="Lock" type="Node2D"]
+position = Vector2(846, 325)
+script = ExtResource("1_ti0pk")
+
+[node name="LockSprite" type="Sprite2D" parent="."]
+position = Vector2(-3.05176e-05, 1)
+scale = Vector2(2.31235, 468.25)
+texture = SubResource("GradientTexture1D_otk1r")
+
+[node name="Pin" parent="LockSprite" instance=ExtResource("2_citan")]
+position = Vector2(-93.8441, -0.275494)
+scale = Vector2(1, 0.00493827)
+
+[node name="ShearLine" type="Line2D" parent="LockSprite"]
+position = Vector2(0, -0.28642)
+scale = Vector2(1, 0.00493827)
+points = PackedVector2Array(-127, -3, 128, -3)
+width = 1.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="ShearLineMarker" type="Marker2D" parent="LockSprite/ShearLine"]
+position = Vector2(0, -3)
+scale = Vector2(1, 29.5)
+
+[node name="KeyHoleSprite" type="Sprite2D" parent="LockSprite"]
+position = Vector2(0, 0.00987661)
+scale = Vector2(1, 0.145679)
+texture = SubResource("GradientTexture1D_h3rru")
+
+[node name="KeyHoleMarker" type="Marker2D" parent="LockSprite/KeyHoleSprite"]
+position = Vector2(0, -0.474576)

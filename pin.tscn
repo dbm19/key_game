@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqmian0grcrss"]
+
+[sub_resource type="Gradient" id="Gradient_16o5n"]
+colors = PackedColorArray(0.772549, 0.403922, 0.964706, 1, 0.773189, 0.400273, 0.964228, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xnefx"]
+gradient = SubResource("Gradient_16o5n")
+
+[node name="Pin" type="Node2D"]
+position = Vector2(598, 294)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.47955e-05, 9.53674e-06)
+scale = Vector2(0.265625, 89.0625)
+texture = SubResource("GradientTexture1D_xnefx")
+
+[node name="Line2D" type="Line2D" parent="Sprite2D"]
+position = Vector2(-6.40039, 0.297788)
+scale = Vector2(4.20572, 0.00631912)
+points = PackedVector2Array(-32, -3, 32, -3)
+width = 3.0
+default_color = Color(0, 0, 0, 1)
