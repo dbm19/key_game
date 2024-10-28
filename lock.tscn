@@ -20,12 +20,20 @@ position = Vector2(846, 325)
 script = ExtResource("1_ti0pk")
 
 [node name="LockSprite" type="Sprite2D" parent="."]
-position = Vector2(-3.05176e-05, 1)
+position = Vector2(-242, -16)
 scale = Vector2(2.31235, 468.25)
 texture = SubResource("GradientTexture1D_otk1r")
 
 [node name="Pin" parent="LockSprite" instance=ExtResource("2_citan")]
-position = Vector2(-93.8441, -0.275494)
+position = Vector2(-93.8439, -0.279765)
+scale = Vector2(1, 0.00493827)
+
+[node name="Pin2" parent="LockSprite" instance=ExtResource("2_citan")]
+position = Vector2(-25.9476, -0.279765)
+scale = Vector2(1, 0.00493827)
+
+[node name="Pin3" parent="LockSprite" instance=ExtResource("2_citan")]
+position = Vector2(41.9487, -0.279765)
 scale = Vector2(1, 0.00493827)
 
 [node name="ShearLine" type="Line2D" parent="LockSprite"]
