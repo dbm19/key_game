@@ -12,7 +12,6 @@ var key_tooth_3_marker
 var rng 
 var ready_positions
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	key_tooth_1_scene = preload("res://key_tooth.tscn")
@@ -34,8 +33,9 @@ func set_positions():
 	key_tooth_1_scene_instance = key_tooth_1_scene.instantiate()
 	key_tooth_2_scene_instance = key_tooth_2_scene.instantiate()
 	key_tooth_3_scene_instance = key_tooth_3_scene.instantiate()
-	print(self.name)
-	if self.name == "Key1":
+	print(get_parent().correct_key)
+	
+	if self.name == get_parent().correct_key:
 		key_tooth_1_scene_instance.position.y += Global.pin_line_position_1 * -100
 		key_tooth_2_scene_instance.position.y += Global.pin_line_position_2 * -100
 		key_tooth_3_scene_instance.position.y += Global.pin_line_position_3 * -100
@@ -53,3 +53,10 @@ func set_positions():
 	add_child(key_tooth_3_scene_instance)
 	
 	ready_positions = false
+
+
+func _on_key_button_pressed() -> void:
+	if get_parent().correct_key == self.name:
+		print("Correct!")
+	else:
+		print("Incorrect!")
