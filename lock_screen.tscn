@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7283ba4six4p"]
+
+[ext_resource type="PackedScene" uid="uid://u3py4itkwc8p" path="res://lock.tscn" id="1_1lipp"]
+[ext_resource type="Script" path="res://lock_screen.gd" id="1_x5r4m"]
+
+[node name="LockScreen" type="Node2D"]
+script = ExtResource("1_x5r4m")
+
+[node name="LockScreenTimer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="Lock" parent="." instance=ExtResource("1_1lipp")]
+position = Vector2(576, 313)
+
+[connection signal="timeout" from="LockScreenTimer" to="." method="_on_lock_screen_timer_timeout"]

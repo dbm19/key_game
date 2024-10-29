@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bndcby0815wx6"]
+
+[ext_resource type="PackedScene" uid="uid://btgemdp6rg2s4" path="res://key.tscn" id="1_wn8te"]
+
+[node name="KeyScreen" type="Node2D"]
+
+[node name="Key1" parent="." instance=ExtResource("1_wn8te")]
+position = Vector2(231, 78)
+
+[node name="Key2" parent="." instance=ExtResource("1_wn8te")]
+position = Vector2(232, 257)
+
+[node name="Key3" parent="." instance=ExtResource("1_wn8te")]
+position = Vector2(232, 454)
+
+[node name="Key4" parent="." instance=ExtResource("1_wn8te")]
+position = Vector2(233, 629)

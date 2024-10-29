@@ -16,11 +16,11 @@ colors = PackedColorArray(0.356863, 0.784314, 0.768627, 1, 0.358723, 0.783908, 0
 gradient = SubResource("Gradient_taaq8")
 
 [node name="Lock" type="Node2D"]
-position = Vector2(846, 325)
+position = Vector2(591, 306)
 script = ExtResource("1_ti0pk")
 
 [node name="LockSprite" type="Sprite2D" parent="."]
-position = Vector2(-242, -16)
+position = Vector2(0.999969, 1)
 scale = Vector2(2.31235, 468.25)
 texture = SubResource("GradientTexture1D_otk1r")
 
